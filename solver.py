@@ -90,8 +90,10 @@ while tries > 0 and not solved:
         guess = get_best_guess(words)
         del words[guess]
         if len(words) == 0:
+            print("-----------------------------------------")
             print('final word is: ' + guess)
             solved = True
         else: 
+            print("-----------------------------------------")
             print('Next word recommendation: ' + guess)
     tries -= 1
